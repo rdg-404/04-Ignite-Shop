@@ -1,17 +1,18 @@
 import { globalStyles } from '@/styles/global'
 import type { AppProps } from 'next/app'
 import LogoImg from '../assets/logo.svg'
+import { Container, Header } from '@/styles/pages/app'
 
 globalStyles()
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div>
-      <div>
+    <Container>
+      <Header>
         <img src={LogoImg.src} alt="Ignite Logo" />
-      </div>
+      </Header>
 
       <Component {...pageProps} />
-    </div>
+    </Container>
   )
 }
