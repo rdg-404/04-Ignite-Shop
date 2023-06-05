@@ -24,4 +24,31 @@ export const Product = styled('a', {
   img: {
     objectFit: 'cover',
   },
+
+  footer: {
+    position: 'absolute',
+    bottom: '0.25rem',
+    left: '0.25rem',
+    right: '0.25rem',
+    padding: '2rem',
+
+    borderRadius: 6,
+
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+
+    backgroundColor: 'rgba(0,0,0,0.6)',
+  },
+
+  strong: {
+    color: '$gray300',
+    fontSize: '$lg',
+  },
+
+  span: {
+    fontSize: '$xl',
+    fontWeight: 'bold',
+    color: '$gray300',
+  },
 })
