@@ -8,3 +8,20 @@ export const HomeContainer = styled('main', {
   marginLeft: 'auto',
   minHeight: 656,
 })
+
+export const Product = styled('a', {
+  background: 'linear-gradient(0deg, #259CA9, #149D69)',
+  borderRadius: 8,
+  padding: '0.25rem',
+  cursor: 'pointer',
+  position: 'relative',
+  overflow: 'hidden',
+
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+
+  img: {
+    objectFit: 'cover',
+  },
+})
