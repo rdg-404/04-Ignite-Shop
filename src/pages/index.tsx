@@ -2,10 +2,11 @@ import Image from 'next/image'
 import camiseta01 from '../assets/camisetas/1.png'
 import camiseta02 from '../assets/camisetas/2.png'
 import camiseta03 from '../assets/camisetas/3.png'
+import { HomeContainer } from '@/styles/pages/home'
 
 export default function Home() {
   return (
-    <div>
+    <HomeContainer>
       <div>
         <Image src={camiseta01} width={520} height={480} alt=""></Image>
 
@@ -32,6 +33,6 @@ export default function Home() {
           <span>R$ 79,90</span>
         </footer>
       </div>
-    </div>
+    </HomeContainer>
   )
 }
