@@ -62,12 +62,12 @@ export const getServerSideProps: GetServerSideProps = async () => {
       id: product.id,
       name: product.name,
       imageUrl: product.images[0],
-      // price: new Intl.NumberFormat('pt-BR', {
-      //   style: 'currency',
-      //   currency: 'BRL',
-      // }).format(price.unit_amount ? price.unit_amount / 100 : 0),
+      price: new Intl.NumberFormat('pt-BR', {
+        style: 'currency',
+        currency: 'BRL',
+      }).format(price.unit_amount ? price.unit_amount / 100 : 0),
 
-      price: price.unit_amount / 100,
+      // price: price.unit_amount / 100,
     }
   })
 
