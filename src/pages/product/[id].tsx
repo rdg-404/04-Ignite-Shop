@@ -1,11 +1,14 @@
+import Image from 'next/image'
+import { GetStaticProps } from 'next'
+
+import Stripe from 'stripe'
+import { stripe } from '../../lib/stripe'
+
 import {
   ImageContainer,
   ProductContainer,
   ProductDetails,
 } from '@/styles/pages/product'
-import { GetStaticProps } from 'next'
-import Stripe from 'stripe'
-import { stripe } from '../../lib/stripe'
 
 interface ProductProps {
   product: {
@@ -17,21 +20,16 @@ interface ProductProps {
   }
 }
 
-export default function Product() {
+export default function Product({ product }: ProductProps) {
   return (
     <ProductContainer>
       <ImageContainer></ImageContainer>
-
+      <Image src={product.imageUrl} width={520} height={480} alt="" />
       <ProductDetails>
-        <h1>Camiseta x</h1>
-        <span>R$ 79,90</span>
+        <h1>{product.name}</h1>
+        <span>{product.price}</span>
 
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae modi,
-          suscipit quia repudiandae iste architecto reprehenderit debitis,
-          itaque sapiente officiis, sequi eius quis doloremque quae delectus
-          assumenda molestiae possimus impedit!
-        </p>
+        <p>{product.description}</p>
 
         <button>Comprar agora</button>
       </ProductDetails>
