@@ -6,10 +6,18 @@ import {
 import { GetStaticProps } from 'next'
 import Stripe from 'stripe'
 import { stripe } from '../../lib/stripe'
-// import { useRouter } from 'next/router'
+
+interface ProductProps {
+  product: {
+    id: string
+    name: string
+    imageUrl: string
+    price: number
+    description: string
+  }
+}
 
 export default function Product() {
-  // const { query } = useRouter()
   return (
     <ProductContainer>
       <ImageContainer></ImageContainer>
