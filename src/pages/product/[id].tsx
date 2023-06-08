@@ -23,8 +23,10 @@ interface ProductProps {
 export default function Product({ product }: ProductProps) {
   return (
     <ProductContainer>
-      <ImageContainer></ImageContainer>
-      <Image src={product.imageUrl} width={520} height={480} alt="" />
+      <ImageContainer>
+        <Image src={product.imageUrl} width={520} height={480} alt="" />
+      </ImageContainer>
+
       <ProductDetails>
         <h1>{product.name}</h1>
         <span>{product.price}</span>
