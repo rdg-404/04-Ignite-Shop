@@ -1,0 +1,9 @@
+#stripe
+
+STRIPE_PUBLIC_KEY=pk_test_51NFltmBFfemrteaRZZ0HhedVxcD3D5etoMSGrHp4NE4FhhWDlCCR7WUS9TyZvphFVmqW499RFqjKHyNXdXkDJdsl00TjqA6mFt
+STRIPE_SECRET_KEY=sk_test_51NFltmBFfemrteaRa74SnT2taBxLtmcGmd413VweBtiTq43Sm6KTJLAMWoj73XvndY1xTThGcC8qJ4GyqUG7xnzn00mx1WzDXe
+
+
+# App
+
+NEXT_URL=http://localhost:3000
