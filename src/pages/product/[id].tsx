@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { GetStaticPaths, GetStaticProps } from 'next'
+import { useRouter } from 'next/router'
 
 import Stripe from 'stripe'
 import { stripe } from '../../lib/stripe'
@@ -9,7 +10,6 @@ import {
   ProductContainer,
   ProductDetails,
 } from '@/styles/pages/product'
-import { useRouter } from 'next/router'
 
 interface ProductProps {
   product: {
