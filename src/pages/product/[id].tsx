@@ -39,7 +39,7 @@ export default function Product({ product }: ProductProps) {
       setIsCreatingCheckoutSession(true)
 
       // communicate with axiosm, get price id
-      const response = await axios.post('/api/hello', {
+      const response = await axios.post('/api/checkout', {
         priceId: product.defaultPriceId,
       })
 
